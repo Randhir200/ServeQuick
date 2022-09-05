@@ -1,5 +1,15 @@
 import React from 'react';
-import { Grid, GridItem, Flex, Box, Heading, Stack } from '@chakra-ui/react';
+import {
+  Grid,
+  GridItem,
+  Flex,
+  Box,
+  Heading,
+  Stack,
+  Text,
+} from '@chakra-ui/react';
+import { ArrowForwardIcon, InfoIcon } from '@chakra-ui/icons';
+
 import ServicesBox from '../components/ServicesBox';
 type Props = {};
 
@@ -33,7 +43,34 @@ const UserServices = (props: Props) => {
               <Heading>0</Heading>
             </Flex>
             <Box maxW='100px' h='2px' color='white'></Box>
-            <Stack></Stack>
+            <Stack mt='10px' px='5px'>
+              <Text fontSize='18px'>on 12th Sep 2022 at 11:30</Text>
+
+              <Flex justify='space-between'>
+                <Text fontSize='15px'>
+                  <ArrowForwardIcon mr='5px' />
+                  AC Installing
+                </Text>
+                <Text fontSize='15px'>
+                  
+                  window typed
+                </Text>
+                <Text fontSize='15px'> qwt-2 </Text>
+                <Text fontSize='15px'>600₹</Text>
+              </Flex>
+              <Flex justify='space-between'>
+                <Text fontSize='15px'>
+                  <ArrowForwardIcon mr='5px' />
+                  Home Wiring
+                </Text>
+                <Text fontSize='15px'>
+                  
+                  20X20 ft
+                </Text>
+                <Text fontSize='15px'>4-Rooms </Text>
+                <Text fontSize='15px'>700₹</Text>
+              </Flex>
+            </Stack>
           </Box>
         </GridItem>
       </Grid>
